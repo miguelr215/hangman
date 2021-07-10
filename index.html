@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container p-2 mx-auto vh-100">
+
+        <h1 class="text-center">Hangman</h1>
+
+        <div class="float-end text-center fs-5 border border-2 border-primary rounded-2 me-2 p-2">
+            <p class="fw-bold">Wrong Guesses</p><span id="mistakes">0</span> out of <span id="maxWrong"></span>
+        </div>
+
+        <div class="text-center p-2">
+            
+            <div class="pictureBox">
+                <img src="images/0.png" alt="Hangman Pic" id="hangmanPic" class="img-fluid">
+            </div>
+
+            <p>Can you guess the word?</p>
+            <p id="wordSpotlight" class="fw-bold fs-3">Mystery Word Goes Here</p>
+        
+            <div id="keyboard"></div>
+
+            <button class="btn btn-secondary mt-3" onClick="reset()">RESET</button>
+        </div>
+
+    </div>
+
+
+    <script src="js/hangman.js"></script>
+</body>
+</html>
