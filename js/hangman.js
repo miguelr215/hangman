@@ -33,7 +33,6 @@ let wordStatus = null;
 
 function randomWord() {
     answer = words[Math.floor(Math.random() * words.length)].toUpperCase();
-    console.log(answer);
 }
 
 function generateButtons() {
@@ -97,8 +96,6 @@ function checkIfGameWon() {
 function reset() {
     mistakes = 0;
     guessed = [];
-
-    // reset hangman image
 
     randomWord();
     updateMistakes();
