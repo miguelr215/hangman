@@ -104,6 +104,7 @@ function reset() {
     updateMistakes();
     guessedWord();
     generateButtons();
+    updateHangmanPic();
 }
 
 document.getElementById('maxWrong').innerHTML = maxWrong;
